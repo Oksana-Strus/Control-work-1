@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="top block">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="middler">
+        <div class="btns">
+            <button type="button" class="edit btn">edit</button>
+            <button type="button" class="style btn">style</button>
+        </div>
+
+        <div class="bottom block">
+            <div class="edit-block hide">
+                <textarea class="area " id="" cols="30" rows="10"></textarea>
+                <button type="button" class="add change-btn">add</button>
+                <button type="button" class="save change-btn">save</button>
+            </div>
+            <div class="style-block hide">
+                <form class="form-size">
+                    <h2>Font Size:</h2>
+                    <input type="radio" name="size" id="" value="12px">12px
+                    <input type="radio" name="size" id="" value="14px">14px
+                    <input type="radio" name="size" id="" value="16px">16px
+                    <input type="radio" name="size" id="" value="18px">18px
+                    <input type="radio" name="size" id="" value="20px">20px
+                </form>
+
+                <form class="">
+                    <h2>Font Family:</h2>
+                    <select class="form-family" id="">
+                        <option value="" disabled selected>Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sans-serif">sans-serif</option>
+                    </select>
+                </form>
+
+                <form name="form-colors">
+                    <h2>Colors:</h2>
+                    <button type="button" class="text-color style-button">Color text</button>
+                    <button type="button" class="background-color style-button">Backgroud color</button>
+
+                </form>
+                <form class="form-style">
+                    <h2>Style:</h2>
+                    <input type="checkbox" name="bold" id="">Bold text
+                    <input type="checkbox" name="cursive" id=""> Cursive text
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="color-box hide"></div>
+    <div class="add-table-list hide block">
+        <form class="form-table-list">
+            <h1>Choose what you want:</h1>
+            <input type="radio" name="tableList" class="tableList" value="table">table
+            <input type="radio" name="tableList" class="tableList" value="list">list
+            <div class="all-li hide">
+                <p class="all-width">Count Li:
+                    <input type="number" class="choose-list" name="" id="count-li" placeholder='Count Li:'></p>
+                <p class="all-width">Type of marks:
+                    <select class="select-mark-type choose-list" id="">
+                        <option value="circle" selected>circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </p>
+                <button type="button" class="count-number">Create list</button>
+            </div>
+            <div class="all-tables hide">
+                <p class="sizeP">Count TR:
+                    <input type="text" name="count-tr" id="count-tr" class="choose-list" placeholder='Count TR:'>
+                </p>
+                <p class="sizeP">Count TD:
+                    <input type="text" name="count-td" id="count-td" class="choose-list" placeholder='Count TD:'>
+                </p>
+                <h2>Add style to your table:</h2>
+                <p class="sizeP">Width of TD:
+                    <input type="text" name="width-td" id="width-td" class="choose-list" placeholder='Width of TD:'>
+                </p>
+                <p class="sizeP">Height of TD:
+                    <input type="text" name="height-td" id="height-td" class="choose-list" placeholder='Height of TD:'>
+                </p>
+                <div class="add-table-style">
+                    <p class="width-of-border">Width of border:
+                        <input type="text" name="width-bd" id="width-bd" class="upper-width" placeholder='Width:'>
+                    </p>
+                    <p class="width-of-border">Type of border:
+                        <select class="select-type-of-border upper-width">
+                            <option value="solid" selected>solid</option>
+                            <option value="dashed">dashed</option>
+                            <option value="dotted">dotted</option>
+                            <option value="double">double</option>
+                        </select>
+                    </p>
+                    <p class="width-of-border">Color of border:
+                        <select class="select-color-of-border upper-width">
+                            <option value="black" selected>black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                        </select>
+                    </p>
+                </div>
+                <button type="button" class="create-table count-number">Create table</button>
+            </div>
+    </div>
+
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
